@@ -15,7 +15,7 @@ const AllPost = ({allPost}) => {
                     <div className={styles.time}>
                         <p className={styles.timeAdd} >{post.data_dodania}</p>
                     </div>
-                    <Link className={styles.btnMore} to={`/posts/${post.id}`} >
+                    <Link className={styles.btnMore} to={`/post/${post.id}`} >
                         <span className={styles.moreStyl}>Pokaz wiecej </span>
                     </Link>
                 </div>

@@ -1,6 +1,6 @@
 
 export const getAllPost = ({postStore}) => postStore.allPost;
-
+export const getPostById = ({postStore}, id) => (postStore.allPost.filter(e => e.id == id));
 
 const reducerName = 'addPost'
 const createActionName = name => `app/${reducerName}/${name}`;

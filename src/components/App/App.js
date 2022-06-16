@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "../Layout/Layout";
 import AllPost from '../../components/AllPost/AllPostContainer';
 import AddPost from '../AddPost/AddPostContainer';
+import Post from '../Post/PostContainer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
             <Route index element={<AllPost />}/>
+            <Route path="/post/:id" element={<Post />} />
             <Route path="/add-post" element={<AddPost/>} />
         </Route>
       </Routes>

@@ -1,0 +1,66 @@
+
+.addWrapper{
+    padding-left: 40px;
+}
+
+.title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+
+    .titleInput{
+        font-size: 17px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .bodyPost{
+        height: 200px;
+        padding: 10px;
+        font-size: 17px;
+    }
+}
+
+.btnWrapper{
+    text-align: end;
+    .addBtn{
+        padding: 10px 17px;
+        border: 1px solid green;
+        background-color: transparent;
+        position: relative;
+        transition: 0.8s;
+        color: #000;
+    }
+
+    .addStyl{
+        position: relative;
+        z-index: 999;
+        transition: 0.8s;
+    }
+
+    .addBtn::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 0;
+        height: 100%;
+        display: block;
+        background-color: green;
+        transition: 0.8s;
+    }
+
+    .addBtn:hover::after{
+        width: 100%;
+    }
+
+    .addBtn:hover .addStyl{
+        color: #fff;
+    }
+}
