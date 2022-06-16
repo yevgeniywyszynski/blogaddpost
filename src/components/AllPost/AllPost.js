@@ -3,7 +3,7 @@ import styles from '../AllPost/AllPost.module.scss';
 import {Link} from 'react-router-dom';
 
 const AllPost = ({allPost}) => {
-    console.log('allPost', allPost)
+
     return(
         <div className={styles.pageWrapper}>
             {allPost.map(post => (

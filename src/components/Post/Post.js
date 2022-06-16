@@ -5,8 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Post = ({getPostById}) => {
-    console.log('post', getPostById)
-
+    
     let{id} = useParams()
     const[post, setPost] = useState({})
 
