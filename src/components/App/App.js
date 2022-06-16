@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Layout from '../../Layout/Layout';
+import Layout from "../Layout/Layout";
 import AllPost from '../../components/AllPost/AllPost';
 import Post from '../Post/Post';
 import AddPost from '../AddPost/AddPost';
