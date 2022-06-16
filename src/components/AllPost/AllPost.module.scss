@@ -1,0 +1,63 @@
+
+
+.pageWrapper{
+    padding-right: 40px;
+    padding-left: 40px;
+    .post {
+        margin-bottom: 40px;
+        border: 1px solid #ef5350;
+        padding: 20px;
+        background-color: #ffebee;
+        .titlePost{
+            font-size: 25px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .bodyPost {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    
+    .timeWrapper{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.btnMore{
+    text-decoration: none;
+    border: 2px solid #ef5350;
+    padding: 12px 18px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+}
+
+.moreStyl{
+    position: relative;
+    z-index: 999;
+    transition: 0.8s;
+}
+
+.btnMore::after{
+    content: "";
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    display: block;
+    background-color: #ef5350;
+    position: absolute;
+    transition: 0.8s;
+}
+
+.btnMore:hover::after{
+    width: 100%;
+}
+
+.btnMore:hover .moreStyl {
+    color: #fff;
+}
