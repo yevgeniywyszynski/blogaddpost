@@ -4,6 +4,7 @@ import Layout from "../Layout/Layout";
 import AllPost from '../../components/AllPost/AllPostContainer';
 import AddPost from '../AddPost/AddPostContainer';
 import Post from '../Post/PostContainer';
+import Options from '../Options/Options';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route index element={<AllPost />}/>
             <Route path="/post/:id" element={<Post />} />
             <Route path="/add-post" element={<AddPost/>} />
+            <Route path="settings" element={<Options />} />
         </Route>
       </Routes>
 

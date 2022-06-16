@@ -1,0 +1,46 @@
+
+.optionWrapper{
+    padding-left: 40px;
+    width: 70%;
+    .title{
+        font-size: 25px;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+}
+
+.fontsWrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    .option {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        .optionTitle{
+            font-size: 17px;
+        }
+        .sizeInput{
+            padding: 10px;
+            font-size: 17px;
+            width: 100%;
+            border: 1px solid #ef5350;
+            background-color: transparent;
+        }
+        .colorInput{
+            font-size: 17px;
+            background-color: transparent;
+            border: 1px solid #ef5350;
+        }
+    }
+}
+
+.btnWrapper{
+    text-align: end;
+    .btnSave{
+        padding: 7px 17px;
+        border: 1px solid #ef5350;
+        background-color: transparent;
+        font-size: 15px;
+    }
+}
